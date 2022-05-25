@@ -30,6 +30,22 @@ const myApp = new Vue ({
             }
         ],
 
+    },
+
+    methods : {
+        nextslide(){
+            this.activeSlide++;
+            if( this.activeSlide > this.slides.length -1){
+                this.activeSlide = 0;
+            }
+        },
+       prevslide(){
+            this.activeSlide--;
+            if( this.activeSlide < 0){
+                this.activeSlide = this.slides.length -1;
+            }
+        },
+
     }
 
         
