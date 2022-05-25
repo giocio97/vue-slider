@@ -46,6 +46,10 @@ const myApp = new Vue ({
             }
         },
 
+    selectSlide (activeSlide){
+        this.activeSlide = activeSlide;
+    },
+
     }
 
         
